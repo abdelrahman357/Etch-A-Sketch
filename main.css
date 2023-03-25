@@ -1,0 +1,46 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    height: 880px;
+    width: 880px;
+    margin:20px auto;
+    background-color: black;
+}
+.container .square {
+    width: 6.25%;
+    height: 6.25%;
+    position: relative;
+}
+
+.container .square::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0;
+}
+.container .hovered {
+    background-color: black;
+}
+
+.popup {
+    margin: 5px auto;
+    display: block;
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+}
